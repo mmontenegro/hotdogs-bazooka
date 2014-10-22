@@ -1,0 +1,78 @@
+.hotdog {
+    position: absolute;
+    width:100px;
+    height:100px;
+
+    -webkit-animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
+    -o-animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
+    -moz-animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
+    animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
+
+}
+
+
+@-webkit-keyframes random-movement {
+
+    100% {
+        -webkit-transform: translate(1280px) rotate(360deg);
+        -webkit-transform-origin: 60% 100%;
+        opacity: 0;
+
+    },
+    50% {
+        -webkit-transform-origin: 60% 100%;
+        -webkit-transform: translate(10000px) rotate(360deg);
+    }
+}
+
+@-o-keyframes random-movement {
+
+    100% {
+        -o-transform: translate(1280px) rotate(360deg);
+        -o-transform-origin: 60% 100%;
+        opacity: 0;
+
+    },
+    50% {
+        -o-transform-origin: 60% 100%;
+        -o-transform: translate(10000px) rotate(360deg);
+    }
+}
+
+@-moz-keyframes random-movement {
+
+    100% {
+        -moz-transform: translate(1280px) rotate(360deg);
+        -moz-transform-origin: 60% 100%;
+        opacity: 0;
+
+    }
+    50% {
+
+        -moz-transform-origin: 60% 100%;
+        -moz-transform: translate(10000px) rotate(360deg);
+
+    }
+}
+
+
+@keyframes random-movement {
+
+    100% {
+        transform: translate(1280px) rotate(360deg);
+        transform-origin: 60% 100%;
+        opacity: 0;
+
+    },
+    50% {
+        transform-origin: 60% 100%;
+        transform: translate(10000px) rotate(360deg);
+
+    }
+}
+
+.hotdogstore {
+    position: fixed;
+    z-index: 9999;
+    pointer-events: none;
+}
