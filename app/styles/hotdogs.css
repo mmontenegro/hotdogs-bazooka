@@ -5,9 +5,10 @@
 
     -webkit-animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
     -o-animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
-    -moz-animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
-    animation: random-movement 5s ease-out 0 infinite; /* Safari 4+ */
-
+    animation-name: random-movement;
+    animation-duration: 5s;
+    timing-function: ease-out;
+    animation-iteration-count: infinite;
 }
 
 
@@ -39,21 +40,6 @@
     }
 }
 
-@-moz-keyframes random-movement {
-
-    100% {
-        -moz-transform: translate(1280px) rotate(360deg);
-        -moz-transform-origin: 60% 100%;
-        opacity: 0;
-
-    }
-    50% {
-
-        -moz-transform-origin: 60% 100%;
-        -moz-transform: translate(10000px) rotate(360deg);
-
-    }
-}
 
 
 @keyframes random-movement {
